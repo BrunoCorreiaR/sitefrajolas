@@ -1,0 +1,22 @@
+<div class="w3-content w3-section" style="max-width:100px">
+	<img class="migrm" src="imagens/download (6).jpg" alt="log" title="log">
+	<img class="migrm" src="imagens/download (7).jpg" alt="log" title="log">
+	<img class="migrm" src="imagens/download (8).jpg" alt="log" title="log">
+	<img class="migrm" src="imagens/download (3).jpg" alt="log" title="log">
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("migrm");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 2800);    
+	}
+</script>
